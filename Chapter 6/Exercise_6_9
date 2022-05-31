@@ -1,0 +1,33 @@
+/*
+Author: Clint Davis
+Date: 5/31/22
+
+This is my attempt at solving Exercise 6-9.
+*/
+
+
+public class Exercise_6_9 {
+	public static void main(String[] args) {
+		double foot = 1;
+		double meter = 20;
+		
+		System.out.printf(" Feet\tMeters\tFeet\tMeters\n");
+		System.out.println("-------------------------------");
+		
+		for (int i = 0; i < 10; i++) {
+		System.out.printf("%4.1f\t%1.3f\t%1.1f\t%1.3f\n", foot, footToMeter(foot), meter, meterToFoot(meter));
+		foot++;
+		meter+=5;
+		}
+	}
+	
+	public static double footToMeter(double foot) {
+		double meters = 0.305 * foot;
+		return meters;
+	}
+	
+	public static double meterToFoot(double meter) {
+		double feet = 3.279 * meter;
+		return feet;
+	}
+}
