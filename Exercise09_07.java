@@ -1,0 +1,88 @@
+/*
+Author: Clint Davis
+Date: 6/6/22
+
+This is my attempt at solving Exercise 9-7.
+
+I had lots of trouble getting the output for my program to match the output from the methods checker on Canvas.
+
+I spent well over an hour wracking my brain as to what my problem was until I finally realized I put a "-" symbol
+instead of a "+" symbol in the deposit() method. lol.
+*/
+
+public class Exercise09_07 {
+	public static void main(String[] args) {
+		Account account1 = new Account(1122, 20000);
+		account1.setAnnualInterestRate(4.5);
+		account1.withdraw(2500);
+		account1.deposit(3000);
+
+		
+		System.out.printf("The ID for this account is: %1d\n" +
+		"The balance for this account is: $%1.2f\n" +
+		"The annual interest rate for this account is: %1.1f%%\n" +
+		"The monthly interest amount is: $%1.3f\n\n" +
+		"This account was created on %s", account1.getId(), account1.getBalance(), account1.getAnnualInterestRate(), account1.getMonthlyInterest(), account1.getDateCreated());
+	}
+}
+
+class Account {
+	private int id = 0;
+	private double balance = 0;
+	private static double annualInterestRate = 0;
+	private java.util.Date dateCreated;
+	
+	public Account() {
+		dateCreated = new java.util.Date();
+	}
+	
+	public Account(int id, double balance) {
+		this();
+		this.id = id;
+		this.balance = balance;
+	}
+	
+	public int getId() {
+		return this.id;
+	}
+	
+	public double getBalance() {
+		return this.balance;
+	}
+	
+	public double getAnnualInterestRate() {
+		return annualInterestRate;
+	}
+	
+	public String getDateCreated() {
+		return this.dateCreated.toString();
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	
+	public void setAnnualInterestRate(double annualInterestRate) {
+		this.annualInterestRate = annualInterestRate;
+	}
+	
+	public double getMonthlyInterestRate() {
+		return (annualInterestRate / 100) / 12;
+	}
+	
+	public double getMonthlyInterest() {
+		return balance * getMonthlyInterestRate();
+	}
+	
+	public void withdraw(double amount) {
+		this.balance -= amount;
+	}
+	
+	public void deposit(double amount) {
+		this.balance += amount;
+	}
+}
