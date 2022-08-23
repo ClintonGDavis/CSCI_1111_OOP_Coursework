@@ -11,9 +11,9 @@ personal friend of mine who works as clinical therapist.
 My project is directly based off of a system which was developed by this friend (at his request).
 
 ## How to Run
-"FinalProject111.java" is needed in order to run this program.
+The file "FinalProject111.java" is needed in order to run this program.
 
-~insert image~
+![This is a screenshot](https://github.com/ClintonGDavis/CSCI_1111_OOP_Coursework/blob/main/CSCI_1111_Final_Project/FinalProject1111%20Screenshot.png)
 
 ## Code Example
 
@@ -58,8 +58,6 @@ public static void main(String[] args) {
 		}
 	}
   ```
-  ## Tests
-  ~display tests~
   
   ## Contributers
   My code is based off a system created by Matt Denhalter.
