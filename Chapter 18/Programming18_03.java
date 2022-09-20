@@ -7,7 +7,7 @@
 
 import java.util.Scanner;
 
-public class Programming18_3 {
+public class Programming18_03 {
   public static int gcd(int m, int n) {
 
     if (m % n == 0) {
