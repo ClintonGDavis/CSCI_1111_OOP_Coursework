@@ -2,12 +2,12 @@
  * Author: Clint Davis
  * Date: 9/19/22
  *
- * This is my attempt at solving Programming 18-9.
+ * This is my attempt at solving Programming 18-09.
  */
 
 import java.util.Scanner;
 
-public class Programming18_9 {
+public class Programming18_09 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
