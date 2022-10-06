@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apMain" prefHeight="365.0" prefWidth="736.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FinalProject1112.View02Controller">
+    <children>
+        <TextArea fx:id="textArea1" layoutX="39.0" layoutY="107.0" prefHeight="210.0" prefWidth="286.0" wrapText="true">
+            <font>
+                <Font name="Cochin" size="20.0" />
+            </font></TextArea>
+        <TextField fx:id="textField1" layoutX="96.0" layoutY="63.0" promptText="i.e. &quot;Earn a high salary&quot;">
+            <font>
+                <Font name="Cochin Bold" size="13.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="textField2" layoutX="473.0" layoutY="63.0" promptText="1-10">
+            <font>
+                <Font name="Cochin Bold" size="13.0" />
+            </font></TextField>
+        <TextArea fx:id="textArea2" layoutX="410.0" layoutY="107.0" prefHeight="210.0" prefWidth="286.0" wrapText="true">
+            <font>
+                <Font name="Cochin" size="20.0" />
+            </font></TextArea>
+        <Line endX="-100.0" endY="242.0" layoutX="468.0" layoutY="123.0" startX="-100.0" startY="-122.0" stroke="#bebebe" />
+        <Label layoutX="92.0" layoutY="44.0" text="Enter Your Work Standard" textFill="WHITESMOKE">
+            <font>
+                <Font name="Cochin Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="475.0" layoutY="43.0" text="Enter Your Work Score" textFill="WHITESMOKE">
+            <font>
+                <Font name="Cochin Bold" size="16.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
