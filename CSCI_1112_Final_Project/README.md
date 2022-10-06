@@ -15,7 +15,7 @@ Click on the "FinalProject1112" class in order to run the program.
 
 ## Code Example
 I am particularly proud of this line of code.
-Not because I find it to be especially complicated (I don't, for the record),
+Not because I find it to be especially complicated (I don't, for the record)
 but it was the one portion of code in my entire project I had difficulty formulating successfully.
 
 Somehow I forgot that I needed to write an action event for each TextField.
