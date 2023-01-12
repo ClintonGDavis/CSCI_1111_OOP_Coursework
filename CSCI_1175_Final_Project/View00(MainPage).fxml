@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalProject1175.PageController">
+   <children>
+      <AnchorPane fx:id="apMain" layoutY="44.0" prefHeight="365.0" prefWidth="736.0" style="-fx-background-color: black;">
+         <children>
+            <Text fill="WHITE" layoutX="209.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the Balanced Living program!">
+               <font>
+                  <Font name="Cochin" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="165.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are now accessing your Balanced Living logbook.">
+               <font>
+                  <Font name="Cochin" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="74.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please click on the buttons above if you would like to submit your information.">
+               <font>
+                  <Font name="Cochin" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="65.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="---Remember to press the &quot;Enter&quot; button after you finish writing each submission.---">
+               <font>
+                  <Font name="Courier New" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="87.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The buttons below will enable you to return to this page, save your work or visualize your scores." textAlignment="CENTER" wrappingWidth="560.5863037109375">
+               <font>
+                  <Font name="Cochin" size="18.0" />
+               </font>
+            </Text>
+            <Line endX="100.0" layoutX="454.0" layoutY="80.0" startX="-273.0" stroke="WHITE" />
+            <Line endX="100.0" layoutX="513.0" layoutY="157.0" startX="-392.0" stroke="WHITE" />
+            <Line endX="100.0" layoutX="575.0" layoutY="265.0" startX="-515.0" stroke="WHITE" />
+         </children></AnchorPane>
+      <HBox alignment="CENTER" prefHeight="45.0" prefWidth="736.0" spacing="50.0" style="-fx-background-color: grey;">
+         <children>
+            <Button fx:id="LoveB" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="56.0" text="Love" />
+            <Button fx:id="WorkB" mnemonicParsing="false" onAction="#handleButtonAction" text="Work" />
+            <Button fx:id="LearningB" mnemonicParsing="false" onAction="#handleButtonAction" text="Learning" />
+            <Button fx:id="PlayB" mnemonicParsing="false" onAction="#handleButtonAction" text="Play" />
+            <Button fx:id="HealthB" mnemonicParsing="false" onAction="#handleButtonAction" text="Health" />
+            <Button fx:id="SafetyB" mnemonicParsing="false" onAction="#handleButtonAction" text="Safety" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="409.0" prefHeight="45.0" prefWidth="736.0" spacing="50.0" style="-fx-background-color: grey;">
+         <children>
+            <Button fx:id="MainPageB" mnemonicParsing="false" onAction="#handleButtonAction" text="Main Page" />
+            <Button fx:id="SaveB" mnemonicParsing="false" onAction="#handleButtonAction" text="Save Work" />
+            <Button fx:id="ShowScoreB" mnemonicParsing="false" onAction="#handleButtonAction" text="Show Scores" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
